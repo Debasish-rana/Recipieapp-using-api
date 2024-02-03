@@ -1,0 +1,132 @@
+*{
+          margin: 0%;
+          padding: 0%;
+}
+body{
+          font-family: 'Inter', sans-serif;
+          font-family: 'Roboto', sans-serif;
+          background-color: black;
+}
+nav{
+          display: flex;
+          justify-content: space-between;
+          padding: 20px;
+          background-color: rgb(103, 103, 214);
+          color: white;
+}
+
+.searchbar{
+          display: flex;
+          gap: 10px;
+
+}
+.searchbar input{
+          width: 300px;
+          padding: 10px;
+          border: none;
+          border-radius: 10px;
+          font-size: 15px;
+}
+.searchbar button{
+          padding: 10px;
+          border: none;
+          border-radius: 10px;
+          background-color: rgb(56, 224, 193);
+          color: white;
+}
+.searchbar button:hover{
+          background-color: rgb(23, 118, 118);
+}
+/*Responsive ness in nav bar*/
+@media  only screen and (max-width:600px){
+          nav{
+                    display: block;
+                    justify-content: center;
+                    text-align: center;
+                    margin-bottom: 5px;
+          }
+          .searchbar{
+                    display: flex;
+                    justify-content: center;
+          }
+          .logo h1{
+                    margin-bottom: 10px;
+          }
+}
+.heading{
+          text-align: center;
+          padding: 20px;
+          color: rgb(226, 224, 224);
+}
+.foodcontainer{
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          width: 80%;
+          justify-content: center;
+          text-align: center;
+          margin: 10px auto;
+}
+.food-card{
+          display: flex;
+          flex-direction: column;
+          margin-inline: 20px;
+          background-color: white;
+          margin-top: 30px;
+          border-radius: 5px;
+          color: black;
+          margin-bottom: 30px;
+}
+.food-card{
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+}
+.food-card{
+          margin-top: 5px;
+}
+.food-card button{
+width: 80px;
+height: 25px;
+background-color: red;
+color: white;
+font-size: 15px;
+border: none;
+margin: auto;
+margin-top: 5px;
+
+}
+.content{
+          display: none;
+          position: fixed;
+          left: 50%;
+          right: 50%;
+          overflow-y: hidden;
+          transform: translate(-50%,40%);
+          background-color: white;
+          color: black;
+          width: 30%;
+          height: 40%;
+          padding: 20px;
+          margin: auto;
+          justify-content: center;
+          overflow-y: scroll;
+}
+.content button{
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          width: 50px;
+          border: none;
+          background-color: grey;
+
+}
+.content button i{
+          font-size: 20px;
+}
+.contentText h1{
+          text-align: center;
+          padding: 5px;
+          margin: 5px;
+}
+.contentText h2{
+          margin-top: 10px;
+}
